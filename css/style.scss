@@ -400,7 +400,7 @@ a:focus {
       text-align: center; // Centraliza o texto
     }
     .row{
-      flex-direction: column-reverse;
+      flex-direction: column-reverse; //altera a ordem de exibição da imagem na versão mobile
     }
   }
 }
