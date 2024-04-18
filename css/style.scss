@@ -7,9 +7,9 @@ $textCol: #1f1f1f;
 
 // import fonts - font-family: 'Open Sans', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @mixin main-font {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
@@ -338,10 +338,12 @@ a:focus {
 
   .img-box {
     margin: 45px 0;
+    display: flex;
+    order: -1;
 
     img {
       width: 100%;
-      animation: upDown 5s infinite;
+      animation: upDown 8s infinite;
     }
 
   }
@@ -381,7 +383,27 @@ a:focus {
     }
   }
 }
-
+//Posiciona os itens no centro na versão mobile
+@media (max-width: 768px) {
+  .slider_section {
+    .img-box {
+      flex-direction: column-reverse;
+      margin-bottom: 20px; // Espaçamento entre a imagem e o texto
+      img {
+        margin-bottom: 15px; // Espaçamento entre a imagem e o texto
+      }
+    }
+    .btn-box{
+      justify-content: center;
+    }
+    .detail-box {
+      text-align: center; // Centraliza o texto
+    }
+    .row{
+      flex-direction: column-reverse;
+    }
+  }
+}
 // end slider section
 
 // service section

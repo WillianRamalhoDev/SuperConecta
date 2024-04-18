@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
   overflow-x: hidden;
@@ -278,10 +279,12 @@ a:focus {
 }
 .slider_section .img-box {
   margin: 45px 0;
+  display: flex;
+  order: -1;
 }
 .slider_section .img-box img {
   width: 100%;
-  animation: upDown 5s infinite;
+  animation: upDown 8s infinite;
 }
 @keyframes upDown {
   0% {
@@ -313,6 +316,24 @@ a:focus {
   background-color: #03ebbd;
 }
 
+@media (max-width: 768px) {
+  .slider_section .img-box {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+  .slider_section .img-box img {
+    margin-bottom: 15px;
+  }
+  .slider_section .btn-box {
+    justify-content: center;
+  }
+  .slider_section .detail-box {
+    text-align: center;
+  }
+  .slider_section .row {
+    flex-direction: column-reverse;
+  }
+}
 .service_section {
   position: relative;
 }
