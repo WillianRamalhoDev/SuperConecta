@@ -278,7 +278,29 @@ a:focus {
 
 
 }
-
+@media (max-width: 992px) {
+  .custom_nav-container{
+    .navbar-nav{
+      font-size: x-large;
+    }
+    #nav-btn{
+      background-color: $primary1;
+      border-radius: 100%;
+      padding: 10px 13px;
+      color: $white;
+      font-size: x-large;
+      font-weight: bolder;
+    }
+    #flex{
+      display: flex;
+      flex-direction: row;
+    }
+    #padding{
+      padding: 20px 10px;
+    }
+  }
+  
+}
 /*end header section*/
 
 /* slider section */
