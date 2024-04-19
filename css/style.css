@@ -232,7 +232,7 @@ a:focus {
     padding: 10px 13px;
     color: #ffffff;
     font-size: x-large;
-    font-weight: bolder;
+    font-weight: bold;
   }
   .custom_nav-container #flex {
     display: flex;
