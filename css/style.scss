@@ -224,7 +224,9 @@ a:focus {
 .custom_nav-container .navbar-toggler {
   outline: none;
 }
-
+#none2{
+  display: none;
+}
 .custom_nav-container .navbar-toggler {
   padding: 0;
   width: 37px;
@@ -275,13 +277,27 @@ a:focus {
 
 
   }
-
-
+  // #padding{
+  //   display: none;
+  // }
+  // #flex{
+  //   display: none;
+  // }
+  
+  // #nav-btn{
+  //   display: none;
+  // }
 }
 @media (max-width: 992px) {
   .custom_nav-container{
     .navbar-nav{
       font-size: x-large;
+    }
+    #none{
+      display: none;
+        }
+    #none2{
+      display: flex;
     }
     #nav-btn{
       background-color: $primary1;

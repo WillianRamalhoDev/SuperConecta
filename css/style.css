@@ -170,6 +170,10 @@ a:focus {
   outline: none;
 }
 
+#none2 {
+  display: none;
+}
+
 .custom_nav-container .navbar-toggler {
   padding: 0;
   width: 37px;
@@ -215,6 +219,12 @@ a:focus {
 @media (max-width: 992px) {
   .custom_nav-container .navbar-nav {
     font-size: x-large;
+  }
+  .custom_nav-container #none {
+    display: none;
+  }
+  .custom_nav-container #none2 {
+    display: flex;
   }
   .custom_nav-container #nav-btn {
     background-color: #03ebbd;
