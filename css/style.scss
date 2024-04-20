@@ -1,9 +1,10 @@
 $white: #ffffff;
-$black: #000000;
+$black: #252525;
 // $primary1: #0cb1a8;
 $primary1: #03ebbd;
 $primary2: #4900ce;
 $textCol: #1f1f1f;
+$light-gray: #2a2a2ac6;
 
 // import fonts - font-family: 'Open Sans', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
@@ -33,21 +34,15 @@ $textCol: #1f1f1f;
 
 body {
   @include main-font;
-  color: #0c0c0c;
+  color: #2a2a2a;
   background-color: #ffffff;
   overflow-x: hidden;
 }
 
-.list-group-item{
-  background-color: #f8f8f9;
-  padding: 0.55rem 1.10rem;
-}
+
 .h5plan{
   margin-bottom: 2rem !important;
   margin-top: 2rem !important;
-}
-.btn-box > a{
-  color: white !important;
 }
 
 .layout_padding {
@@ -88,10 +83,22 @@ body {
       color: $primary2;
     }
   }
-
+  h4{
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
   p {
     margin-top: 10px;
     margin-bottom: 0;
+
+    span {
+      color: $primary2;
+    }
+    strong{
+      font-weight: 600;
+    }
   }
 
   &.heading_center {
@@ -346,8 +353,8 @@ a:focus {
     .btn-box {
       display: flex;
       margin: 0 -5px;
-      margin-top: 25px;
-      margin-bottom: 25px;
+      margin-top: 20px;
+      margin-bottom: 20px;
 
       a {
         margin: 5px;
@@ -437,7 +444,12 @@ a:focus {
 // end slider section
 
 // service section
+.list-group-item{
+  background-color: #f8f8f900;
+  padding: 0.55rem 1.10rem;
+  color: $light-gray;
 
+}
 .service_section {
   position: relative;
 
@@ -447,7 +459,7 @@ a:focus {
     align-items: center;
     text-align: center;
     margin-top: 45px;
-    background-color: #f8f8f9;
+    background-color: #f5f5f7;
     padding: 20px;
     border-radius: 5px;
 
@@ -468,12 +480,18 @@ a:focus {
     }
 
     .detail-box {
-      h5 {
+      h4 {
         font-weight: bold;
         text-transform: uppercase;
         color: $primary2;
       }
+      .list-group .list-group-flush{
+        background-color: #f8f8f9;
+        gap: 1px;
 
+        
+      }
+        
       p {}
 
       a {
@@ -491,7 +509,7 @@ a:focus {
   .btn-box {
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 25px;
 
     a {
       @include hero_btn($primary1, $white, 10px, 45px, 0);
